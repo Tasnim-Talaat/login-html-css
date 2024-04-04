@@ -168,16 +168,40 @@ border-radius: 15px !important;    /* width: 580px    ; */
 
 
     /* media query */
+    @media (max-width: 768px) {
+      .row{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        
+        
+      }
+      .col-md-6{
+        flex: 0 0 100%;
+  -ms-flex: 0 0 100%;
+  max-width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+      }
+      .right-card{
+        padding-top: 50px;
+        padding-bottom: 50px;
+      }
+    }
     @media (min-width: 576px) {
         .container {
           max-width: 540px;
         }
+        
+
       }
       
       @media (min-width: 768px) {
         .container {
           max-width: 720px;
         }
+        
       }
       
       @media (min-width: 992px) {
